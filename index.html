@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Instituto de Formação e Tecnologia - IFT</title>
+  <title>IFT – Instituto de Formação e Tecnologia</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f8f9fa;
+      background-color: #f4f4f4;
       color: #333;
     }
 
@@ -22,30 +22,30 @@
     header img {
       display: block;
       margin: 0 auto 30px auto;
-      width: 340px;
+      width: 360px;
     }
 
     h1, h2 {
-      color: #0a2a5e;
       text-align: center;
+      color: #0a2a5e;
     }
 
-    p, li {
+    p {
       font-size: 18px;
       line-height: 1.6;
     }
 
     .section {
-      background-color: #ffffff;
+      background-color: white;
       padding: 30px;
-      margin-bottom: 40px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      margin-top: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
 
     .objectives {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       margin: 30px 0;
     }
@@ -75,6 +75,11 @@
       border-radius: 25px;
       font-size: 16px;
       cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .knowledge-areas button:hover {
+      background-color: #163e83;
     }
 
     .ecossistema {
@@ -92,7 +97,7 @@
       flex-direction: column;
       align-items: center;
       gap: 10px;
-      margin-bottom: 30px;
+      margin: 20px 0;
     }
 
     .links-ecossistema a {
@@ -102,11 +107,15 @@
       text-decoration: none;
     }
 
+    .links-ecossistema a:hover {
+      text-decoration: underline;
+    }
+
     footer {
       text-align: center;
       color: #aaa;
       font-size: 14px;
-      padding: 20px 0;
+      padding: 30px 0;
     }
   </style>
 </head>
@@ -120,11 +129,13 @@
     </header>
 
     <section class="section">
-      <p>O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais nas áreas altamente especializadas. Seus principais objetivos são:</p>
+      <p>
+        O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais nas áreas altamente especializadas. Seus principais objetivos são:
+      </p>
 
       <div class="objectives">
         <div class="objective-box">
-          Promover e executar a gestão de projetos e de pesquisas em assuntos culturais e tecnológicos, como biotecnologia, agronegócio, energias limpas e saúde.
+          Promover e executar a gestão de projetos e pesquisas em assuntos culturais e tecnológicos, como biotecnologia, agronegócio, energias limpas e saúde.
         </div>
         <div class="objective-box">
           Mediar e efetuar a transferência tecnológica entre universidades, institutos, empresas estatais e privadas, centros de ensino e outras entidades afins.
@@ -155,15 +166,15 @@
 
       <div class="links-ecossistema">
         <a href="https://jucelio-sinthesys.github.io/sinthesys-site/" target="_blank">Rede Sinthesys</a>
-        <a href="https://jucelio-sinthesys.github.io/LISIInnovationLab/" target="_blank">L.I.S.I. - Laboratory of Integrated Science & Innovation</a>
-        <a href="https://jucelio-sinthesys.github.io/Incubatech/" target="_blank">Incubatech - Inovação e Impacto Social</a>
+        <a href="https://jucelio-sinthesys.github.io/LISIInnovationLab/" target="_blank">L.I.S.I. – Laboratory of Integrated Science & Innovation</a>
+        <a href="https://jucelio-sinthesys.github.io/Incubatech/" target="_blank">Incubatech – Inovação e Impacto Social</a>
       </div>
 
-      <img src="mandalaTECHSOL.PNG" alt="Mandala Techsol - Integração H.O.L.O.S." />
+      <img src="mandalaTECHSOL.PNG" alt="Mandala do Ecossistema Techsol" />
     </section>
 
     <footer>
-      &copy; 2025 Instituto de Formação e Tecnologia - Todos os direitos reservados.
+      &copy; 2025 Instituto de Formação e Tecnologia – Todos os direitos reservados.
     </footer>
   </div>
 
