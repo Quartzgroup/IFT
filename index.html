@@ -1,168 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFT – Instituto de Formação e Tecnologia</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto de Formação e Tecnologia</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      color: #333;
     }
     header {
+      background-color: #003366;
+      padding: 20px;
       text-align: center;
-      background-color: #ffffff;
-      padding: 40px 20px 10px;
     }
     header img {
-      width: 300px; /* logomarca dobrada */
+      height: 160px;
     }
-    .slogan {
-      font-size: 28px;
-      color: #004080;
+    header h2 {
+      color: #007BFF;
+      font-size: 2em;
       margin-top: 10px;
-      font-weight: bold;
     }
     main {
-      padding: 30px;
-      max-width: 1000px;
+      padding: 20px;
+      max-width: 900px;
       margin: auto;
-      background-color: #ffffff;
+      background-color: #fff;
     }
     section {
       margin-bottom: 40px;
     }
-    .objectives-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin-top: 20px;
+    h1, h2 {
+      color: #003366;
     }
-    .objective {
-      background-color: #003366;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
     }
-    .knowledge-buttons {
+    .objectives {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       gap: 10px;
-      margin-top: 20px;
     }
-    .knowledge-buttons button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      background-color: #004080;
+    .objectives div {
+      background-color: #003366;
       color: white;
-      border-radius: 5px;
-      cursor: pointer;
+      padding: 15px;
+      flex: 0 0 calc(50% - 10px);
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
     }
-    .ecosystem img {
-      width: 100%;
-      margin-top: 30px;
+    .ecosystem, .projects {
+      text-align: center;
     }
-    .ecosystem-links {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .ecosystem-links a {
-      color: #004080;
+    .ecosystem a, .projects button {
+      background-color: #0055aa;
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
       text-decoration: none;
+      display: inline-block;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
     }
-    .projects-section {
-      margin-top: 40px;
-    }
-    .projects-section h2 {
-      color: #004080;
-    }
-    .projects-buttons {
-      display: flex;
-      gap: 15px;
-      margin-top: 15px;
-    }
-    .projects-buttons button {
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #004080;
-      color: white;
-      border: none;
-      border-radius: 5px;
+    .ecosystem a:hover, .projects button:hover {
+      transform: scale(1.05);
     }
     footer {
+      background-color: #003366;
+      color: white;
       text-align: center;
-      padding: 20px;
-      background-color: #eaeaea;
+      padding: 10px;
+    }
+    img.ecosystem-img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo-ift.png" alt="Logomarca IFT">
-    <div class="slogan">PRESENTE NO FUTURO.</div>
+    <img src="logo-ift.png" alt="Logo IFT">
+    <h2>PRESENTE NO FUTURO.</h2>
   </header>
   <main>
     <section>
       <p>
-        Vivemos tempos de intensa evolução tecnológica. As organizações procuram acompanhar esse ritmo e, na maioria das vezes, deparam-se com dificuldades advindas da sua própria estrutura.<br>
-        Estar bem preparado neste momento é fundamental e a preparação é produto de um incessante trabalho de formação e profissionalização de equipes.<br>
-        O IFT – Instituto de Formação e Tecnologia foi criado em 1996, dentro de uma concepção sistêmica, voltado para atender essas necessidades de formação das pessoas e, por conseguinte, das organizações. Nasceu com a determinação de, nos seus primeiros passos, estar presente no futuro.<br>
-        O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais altamente especializadas.<br>
+        Vivemos tempos de intensa evolução tecnológica. As organizações procuram acompanhar esse ritmo e, na maioria das vezes, deparam-se com dificuldades advindas da sua própria estrutura.<br><br>
+        Estar bem preparado neste momento é fundamental e a preparação é produto de um incessante trabalho de formação e profissionalização de equipes.<br><br>
+        O IFT – Instituto de Formação e Tecnologia foi criado em 1996, dentro de uma concepção sistêmica, voltado para atender essas necessidades de formação das pessoas e, por conseguinte, das organizações. Nasceu com a determinação de, nos seus primeiros passos, estar presente no futuro.<br><br>
+        O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais altamente especializadas.<br><br>
         Constituído por pessoas físicas, o Instituto trabalha com recursos próprios ou provenientes de convênios com universidades, empresas estatais ou privadas, além de outros centros de pesquisa tecnológica e organizações congêneres. Seus principais produtos e serviços são:
       </p>
-      <div class="objectives-grid">
-        <div class="objective">Programas Institucionais</div>
-        <div class="objective">Consultoria</div>
-        <div class="objective">Projetos Especiais</div>
-        <div class="objective">Cursos de Formação e Especialização</div>
+      <div class="objectives">
+        <div>Programas Institucionais</div>
+        <div>Consultoria</div>
+        <div>Projetos Especiais</div>
+        <div>Cursos especiais de formação e especialização</div>
       </div>
       <p>
-        O IFT entende que isso faz a diferença: soluções práticas e objetivas e a busca constante de ideias extraídas da vivência empresarial e da experiência de seus parceiros em diversas localidades, no Brasil e em outros países.<br>
-        Utilizando-se de técnicas modernas e arrojadas, o IFT atua em áreas estratégicas do conhecimento humano:
-      </p>
-      <div class="knowledge-buttons">
-        <button>Gestão Pública</button>
-        <button>Gestão Estratégica</button>
-        <button>Ciência de Dados</button>
-        <button>Educação</button>
-        <button>Tecnologia</button>
-        <button>Direito Digital</button>
-      </div>
-      <p>
-        Seu espectro de ação envolve desde estratégias corporativas até a gestão de projetos específicos.<br>
-        Os serviços prestados pelo IFT incluem a transferência de conhecimentos e tecnologias aos profissionais das instituições contratantes e parceiras, pois eles são envolvidos na investigação, seleção e aplicação de soluções.<br>
+        O IFT entende que isso faz a diferença: soluções práticas e objetivas e a busca constante de ideias extraídas da vivência empresarial e da experiência de seus parceiros em diversas localidades, no Brasil e em outros países.<br><br>
+        Utilizando-se de técnicas modernas e arrojadas, o IFT atua em áreas estratégicas do conhecimento humano:<br><br>
+        Seu espectro de ação envolve desde estratégias corporativas até a gestão de projetos específicos.<br><br>
+        Os serviços prestados pelo IFT incluem a transferência de conhecimentos e tecnologias aos profissionais das instituições contratantes e parceiras, pois eles são envolvidos na investigação, seleção e aplicação de soluções.<br><br>
         Os profissionais do IFT primam pela qualidade e criatividade – elementos propulsores do conhecimento humano.
       </p>
     </section>
+
     <section class="ecosystem">
       <h2>ECOSSISTEMA IFT-TECHSOL</h2>
-      <img src="ECOSSISTEMA-IFT-TECHSOL.PNG" alt="Ecossistema IFT-Techsol">
-      <div class="ecosystem-links">
-        <a href="https://quartzgroup.github.io/techsol-site" target="_blank">Techsol</a>
-        <a href="https://jucelio-sinthesys.github.io/LISIInnovationLab/" target="_blank">L.I.S.I.</a>
-        <a href="https://jucelio-sinthesys.github.io/incubatech/" target="_blank">Incubatech</a>
-        <a href="https://jucelio-sinthesys.github.io/sinthesys-site/" target="_blank">Sinthesys</a>
-      </div>
+      <p>O ECOSSISTEMA IFT-TECHSOL representa a união entre a experiência de mais de duas décadas do IFT e a inovação tecnológica da Techsol. Juntos, promovem soluções integradas para instituições públicas, privadas e do terceiro setor.</p>
+      <a href="https://quartzgroup.github.io/techsol-site" target="_blank">Techsol</a>
+      <a href="https://jucelio-sinthesys.github.io/LISIInnovationLab/" target="_blank">L.I.S.I.</a>
+      <a href="https://jucelio-sinthesys.github.io/Incubatech/" target="_blank">Incubatech</a>
+      <a href="https://jucelio-sinthesys.github.io/sinthesys-site/" target="_blank">Sinthesys</a>
+      <img src="ECOSSISTEMA-IFT-TECHSOL.PNG" alt="Ecossistema IFT-TECHSOL" class="ecosystem-img">
     </section>
-    <section class="projects-section">
+
+    <section class="projects">
       <h2>INICIATIVAS E PROJETOS APOIADOS PELO IFT/TECHSOL</h2>
-      <div class="projects-buttons">
-        <button>HUB DAIA</button>
-        <button>GOIÁS É DEMAIS!</button>
-        <button>CYBERLEX</button>
-      </div>
+      <button>HUB DAIA</button>
+      <button>GOIÁS É DEMAIS!</button>
+      <button>CYBERLEX</button>
     </section>
   </main>
   <footer>
-    <p>&copy; 2025 Instituto de Formação e Tecnologia – IFT. Todos os direitos reservados.</p>
+    <p>&copy; 2025 Instituto de Formação e Tecnologia. Todos os direitos reservados.</p>
   </footer>
 </body>
 </html>
