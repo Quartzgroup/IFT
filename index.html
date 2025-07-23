@@ -20,7 +20,7 @@
     }
 
     header img {
-      max-height: 100px;
+      max-height: 200px; /* Dobro do tamanho anterior */
       margin-bottom: 10px;
     }
 
@@ -84,6 +84,49 @@
       max-width: 100%;
       height: auto;
       border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .ecossistema-links {
+      margin-top: 15px;
+    }
+
+    .ecossistema-links a {
+      display: inline-block;
+      margin: 6px 12px;
+      background-color: #004080;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .iniciativas {
+      margin-top: 60px;
+      text-align: center;
+    }
+
+    .iniciativas h2 {
+      margin-bottom: 20px;
+    }
+
+    .iniciativas .botoes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .iniciativas .botoes button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
@@ -91,7 +134,7 @@
       color: white;
       text-align: center;
       padding: 12px;
-      margin-top: 40px;
+      margin-top: 60px;
     }
   </style>
 </head>
@@ -109,7 +152,7 @@
     <p>O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais altamente especializadas.</p>
     <p>Constituído por pessoas físicas, o Instituto trabalha com recursos próprios ou provenientes de convênios com universidades, empresas estatais ou privadas, além de outros centros de pesquisa tecnológica e organizações congêneres.</p>
 
-    <h2>Seus principais objetivos são:</h2>
+    <h2>Seus principais produtos e serviços são:</h2>
 
     <div class="objetivos">
       <div class="objetivo">Programas Institucionais</div>
@@ -137,8 +180,24 @@
     <h2>ECOSSISTEMA IFT-TECHSOL</h2>
     <p>O ECOSSISTEMA IFT-TECHSOL representa a união entre a experiência de mais de duas décadas do IFT e a inovação tecnológica da Techsol. Juntos, promovem soluções integradas para instituições públicas, privadas e do terceiro setor.</p>
 
+    <div class="ecossistema-links">
+      <a href="https://quartzgroup.github.io/techsol-site" target="_blank">Techsol</a>
+      <a href="https://quartzgroup.github.io/LISI" target="_blank">L.I.S.I.</a>
+      <a href="https://quartzgroup.github.io/Incubatech" target="_blank">Incubatech</a>
+      <a href="https://quartzgroup.github.io/sinthesys-site" target="_blank">Sinthesys</a>
+    </div>
+
     <div class="ecossistema">
       <img src="ECOSSISTEMA-IFT-TECHSOL.PNG" alt="Ecossistema IFT-TECHSOL" />
+    </div>
+
+    <div class="iniciativas">
+      <h2>INICIATIVAS E PROJETOS APOIADOS PELO IFT/TECHSOL</h2>
+      <div class="botoes">
+        <button>HUB DAIA</button>
+        <button>GOIÁS É DEMAIS!</button>
+        <button>CYBERLEX</button>
+      </div>
     </div>
   </main>
 
