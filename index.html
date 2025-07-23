@@ -4,200 +4,171 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IFT – Instituto de Formação e Tecnologia</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
       color: #333;
     }
 
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 20px 10px;
-      text-align: center;
-    }
-
     header img {
-      max-height: 200px; /* Dobro do tamanho anterior */
-      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto;
+      width: 300px; /* Logo com o dobro do tamanho anterior */
     }
 
-    main {
-      max-width: 960px;
-      margin: auto;
-      padding: 40px 20px;
-      background-color: #ffffff;
-    }
-
-    h1, h2 {
-      color: #003366;
-      margin-top: 20px;
-    }
-
-    p {
-      text-align: justify;
-      line-height: 1.6;
-      margin-bottom: 16px;
-    }
-
-    .objetivos {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-      margin: 30px 0;
-    }
-
-    .objetivo {
-      background-color: #003366;
-      color: white;
+    .slogan {
       text-align: center;
-      padding: 18px;
-      border-radius: 8px;
+      font-size: 2em;
+      color: #0050b3;
+      margin-top: 10px;
       font-weight: bold;
     }
 
-    .areas {
+    .section-title {
+      font-size: 1.5em;
+      margin-top: 30px;
+      color: #003366;
+    }
+
+    .objectives-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
-      margin: 30px 0;
+      gap: 10px;
+      justify-content: space-between;
     }
 
-    .areas button {
-      background-color: #004080;
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 6px;
-      font-weight: bold;
-      cursor: pointer;
+    .objective-box {
+      background-color: #003366;
+      color: #fff;
+      flex: 1 1 48%;
+      padding: 15px;
+      border-radius: 8px;
+      min-width: 200px;
     }
 
-    .ecossistema {
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .ecossistema img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .ecossistema-links {
-      margin-top: 15px;
-    }
-
-    .ecossistema-links a {
-      display: inline-block;
-      margin: 6px 12px;
-      background-color: #004080;
-      color: white;
-      padding: 10px 16px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .iniciativas {
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    .iniciativas h2 {
-      margin-bottom: 20px;
-    }
-
-    .iniciativas .botoes {
+    .strategic-buttons {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
+      margin-top: 20px;
+      gap: 10px;
     }
 
-    .iniciativas .botoes button {
+    .strategic-buttons button {
+      padding: 10px 20px;
       background-color: #003366;
-      color: white;
+      color: #fff;
       border: none;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-size: 1rem;
-      font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
     }
 
     footer {
-      background-color: #003366;
-      color: white;
       text-align: center;
-      padding: 12px;
-      margin-top: 60px;
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .ecosystem-links a {
+      display: inline-block;
+      margin: 5px 10px;
+      color: #003366;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .initiative-buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .initiative-buttons button {
+      padding: 10px 18px;
+      background-color: #006699;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo-ift.png" alt="Logo IFT" />
-    <h1>Instituto de Formação e Tecnologia – IFT</h1>
+    <img src="logo-ift.png" alt="Logomarca do IFT" />
+    <div class="slogan">PRESENTE NO FUTURO.</div>
   </header>
 
   <main>
-    <p><strong>Vivemos tempos de intensa evolução tecnológica.</strong> As organizações procuram acompanhar esse ritmo e, na maioria das vezes, deparam-se com dificuldades advindas da sua própria estrutura.</p>
-    <p>Estar bem preparado neste momento é fundamental e a preparação é produto de um incessante trabalho de formação e profissionalização de equipes.</p>
-    <p><strong>O IFT – Instituto de Formação e Tecnologia</strong> foi criado em 1996, dentro de uma concepção sistêmica, voltado para atender essas necessidades de formação das pessoas e, por conseguinte, das organizações. Nasceu com a determinação de, nos seus primeiros passos, estar presente no futuro.</p>
-    <p>O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais altamente especializadas.</p>
-    <p>Constituído por pessoas físicas, o Instituto trabalha com recursos próprios ou provenientes de convênios com universidades, empresas estatais ou privadas, além de outros centros de pesquisa tecnológica e organizações congêneres.</p>
+    <p>
+      Vivemos tempos de intensa evolução tecnológica. As organizações procuram acompanhar esse ritmo e, na maioria das vezes, deparam-se com dificuldades advindas da sua própria estrutura.
+      Estar bem preparado neste momento é fundamental e a preparação é produto de um incessante trabalho de formação e profissionalização de equipes.
+    </p>
+    <p>
+      O IFT – Instituto de Formação e Tecnologia foi criado em 1996, dentro de uma concepção sistêmica, voltado para atender essas necessidades de formação das pessoas e, por conseguinte, das organizações. Nasceu com a determinação de, nos seus primeiros passos, estar presente no futuro.
+    </p>
+    <p>
+      O IFT é uma organização sem fins lucrativos, que mantém intercâmbio com instituições nacionais e internacionais altamente especializadas.
+      Constituída por pessoas físicas, a entidade trabalha com recursos próprios ou provenientes de convênios com universidades, empresas estatais ou privadas, além de centros de pesquisa tecnológica e organizações congêneres.
+    </p>
 
-    <h2>Seus principais produtos e serviços são:</h2>
-
-    <div class="objetivos">
-      <div class="objetivo">Programas Institucionais</div>
-      <div class="objetivo">Consultoria</div>
-      <div class="objetivo">Projetos Especiais</div>
-      <div class="objetivo">Cursos de Formação e Especialização</div>
+    <h2 class="section-title">Seus principais produtos e serviços são:</h2>
+    <div class="objectives-grid">
+      <div class="objective-box">Programas Institucionais</div>
+      <div class="objective-box">Consultoria</div>
+      <div class="objective-box">Projetos Especiais</div>
+      <div class="objective-box">Cursos de Formação e Especialização</div>
     </div>
 
-    <p>O IFT entende que isso faz a diferença: soluções práticas e objetivas e a busca constante de ideias extraídas da vivência empresarial e da experiência de seus parceiros em diversas localidades, no Brasil e em outros países.</p>
-    <p>Utilizando-se de técnicas modernas e arrojadas, o IFT atua em áreas estratégicas do conhecimento humano:</p>
+    <p>
+      O IFT entende que isso faz a diferença: soluções práticas e objetivas e a busca constante de ideias extraídas da vivência empresarial e da experiência de seus parceiros em diversas localidades, no Brasil e em outros países.
+    </p>
+    <p>
+      Utilizando-se de técnicas modernas e arrojadas, o IFT atua em áreas estratégicas do conhecimento humano:
+    </p>
 
-    <div class="areas">
-      <button>Ciência da Informação</button>
-      <button>Ciência de Dados</button>
-      <button>Gestão Pública</button>
-      <button>Inovação</button>
+    <div class="strategic-buttons">
+      <button>Gestão</button>
       <button>Educação</button>
-      <button>Tecnologia e Sociedade</button>
+      <button>Direito</button>
+      <button>Tecnologia</button>
     </div>
 
-    <p>Seu espectro de ação envolve desde estratégias corporativas até a gestão de projetos específicos.</p>
-    <p>Os serviços prestados pelo IFT incluem a transferência de conhecimentos e tecnologias aos profissionais das instituições contratantes e parceiras, pois eles são envolvidos na investigação, seleção e aplicação de soluções.</p>
-    <p>Os profissionais do IFT primam pela qualidade e criatividade – elementos propulsores do conhecimento humano.</p>
+    <p>
+      Seu espectro de ação envolve desde estratégias corporativas até a gestão de projetos específicos.
+      Os serviços prestados pelo IFT incluem a transferência de conhecimentos e tecnologias aos profissionais das instituições contratantes e parceiras, pois eles são envolvidos na investigação, seleção e aplicação de soluções.
+    </p>
 
-    <h2>ECOSSISTEMA IFT-TECHSOL</h2>
-    <p>O ECOSSISTEMA IFT-TECHSOL representa a união entre a experiência de mais de duas décadas do IFT e a inovação tecnológica da Techsol. Juntos, promovem soluções integradas para instituições públicas, privadas e do terceiro setor.</p>
+    <p>
+      Os profissionais do IFT primam pela qualidade e criatividade – elementos propulsores do conhecimento humano.
+    </p>
 
-    <div class="ecossistema-links">
+    <h2 class="section-title">ECOSSISTEMA IFT-TECHSOL</h2>
+    <p>
+      O ECOSSISTEMA IFT-TECHSOL representa a união entre a experiência de mais de duas décadas do IFT e a inovação tecnológica da Techsol. Juntos, promovem soluções integradas para instituições públicas, privadas e do terceiro setor.
+    </p>
+
+    <div class="ecosystem-links">
       <a href="https://quartzgroup.github.io/techsol-site" target="_blank">Techsol</a>
       <a href="https://quartzgroup.github.io/LISI" target="_blank">L.I.S.I.</a>
       <a href="https://quartzgroup.github.io/Incubatech" target="_blank">Incubatech</a>
       <a href="https://quartzgroup.github.io/sinthesys-site" target="_blank">Sinthesys</a>
     </div>
 
-    <div class="ecossistema">
-      <img src="ECOSSISTEMA-IFT-TECHSOL.PNG" alt="Ecossistema IFT-TECHSOL" />
-    </div>
-
-    <div class="iniciativas">
-      <h2>INICIATIVAS E PROJETOS APOIADOS PELO IFT/TECHSOL</h2>
-      <div class="botoes">
-        <button>HUB DAIA</button>
-        <button>GOIÁS É DEMAIS!</button>
-        <button>CYBERLEX</button>
-      </div>
+    <h2 class="section-title">INICIATIVAS E PROJETOS APOIADOS PELO IFT/TECHSOL</h2>
+    <div class="initiative-buttons">
+      <button>HUB DAIA</button>
+      <button>GOIÁS É DEMAIS!</button>
+      <button>CYBERLEX</button>
     </div>
   </main>
 
