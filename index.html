@@ -45,8 +45,6 @@
       display: block;
     }
 
-    /* Layout base */
-
     .container {
       max-width: var(--max-width);
       margin: 0 auto;
@@ -96,8 +94,6 @@
     .section-header p {
       margin-top: 0.5rem;
     }
-
-    /* Header / Nav */
 
     header {
       position: sticky;
@@ -294,8 +290,6 @@
       }
     }
 
-    /* Hero */
-
     #inicio {
       padding-top: 4.5rem;
       background: radial-gradient(circle at top left, #e0f2fe 0, #f5f7fb 52%, #e2fbe8 100%);
@@ -442,8 +436,6 @@
       }
     }
 
-    /* Cards gerais */
-
     .grid-3 {
       display: grid;
       gap: 1.6rem;
@@ -480,8 +472,6 @@
       font-weight: 700;
     }
 
-    /* Chips */
-
     .chip-row {
       display: flex;
       flex-wrap: wrap;
@@ -497,8 +487,6 @@
       border: 1px solid rgba(148, 163, 184, 0.5);
       white-space: nowrap;
     }
-
-    /* Ecosistema section */
 
     .eco-grid {
       display: grid;
@@ -558,8 +546,6 @@
       color: var(--primary-dark);
     }
 
-    /* Destaques */
-
     .highlights-grid {
       display: grid;
       gap: 1.4rem;
@@ -613,8 +599,6 @@
       font-weight: 600;
     }
 
-    /* Seções internas (IFT ICT, LISI, Incubatech etc.) */
-
     .section-alt {
       background: #ffffff;
     }
@@ -667,8 +651,6 @@
       color: var(--muted);
     }
 
-    /* Conteúdos & Notícias */
-
     .content-grid {
       display: grid;
       gap: 1.5rem;
@@ -702,8 +684,6 @@
       font-size: 0.9rem;
     }
 
-    /* Contato */
-
     .contact-grid {
       display: grid;
       gap: 1.8rem;
@@ -711,7 +691,7 @@
 
     @media (min-width: 900px) {
       .contact-grid {
-        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        grid-template-columns: minmax(0, 1.3fr);
       }
     }
 
@@ -750,21 +730,6 @@
       min-height: 120px;
       resize: vertical;
     }
-
-    .contact-info {
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .contact-info p + p {
-      margin-top: 0.6rem;
-    }
-
-    .contact-info strong {
-      color: var(--primary-dark);
-    }
-
-    /* Footer */
 
     footer {
       border-top: 1px solid rgba(148, 163, 184, 0.35);
@@ -809,8 +774,6 @@
     .footer-links a {
       color: var(--muted);
     }
-
-    /* Utilidades */
 
     .mt-2 { margin-top: 0.5rem; }
     .mt-3 { margin-top: 0.75rem; }
@@ -871,7 +834,7 @@
           <h1>IFT – Ciência, Educação e Tecnologia para transformar o futuro</h1>
           <p>
             O Instituto de Formação em Tecnologia – IFT é uma associação civil de direito privado, sem fins lucrativos,
-            <span class="accent">Instituição Científica, Tecnológica e de Inovação (ICT privada), conforme a Lei nº 10.973/2004</span>.
+            <span class="accent">Instituição Científica, Tecnológica e de Inovação (ICT privada).</span>
             Com 29 anos de atuação em educação, ciência aplicada e desenvolvimento tecnológico, o IFT é o
             <strong>pilar científico e educacional do ecossistema Quartzgroup</strong>.
           </p>
@@ -960,7 +923,7 @@
           </p>
         </div>
         <div class="grid-3">
-          <div class="card" style="grid-column:auto;grid-row:auto;">
+          <div class="card">
             <div class="card-tag">P&D • Laboratório</div>
             <h3>L.I.S.I. – Laboratory of Integrated Science & Innovation</h3>
             <p>
@@ -973,7 +936,7 @@
               <a href="#lisi" class="btn btn-outline">Saiba mais sobre o L.I.S.I.</a>
             </div>
           </div>
-          <div class="card" style="grid-column:auto;grid-row:auto;">
+          <div class="card">
             <div class="card-tag">Inovação • Startups</div>
             <h3>Incubatech IFT</h3>
             <p>
@@ -986,7 +949,7 @@
               <a href="#incubatech" class="btn btn-outline">Saiba mais sobre a Incubatech</a>
             </div>
           </div>
-          <div class="card" style="grid-column:auto;grid-row:auto;">
+          <div class="card">
             <div class="card-tag">Ecossistema</div>
             <h3>Integração com o ecossistema Quartzgroup</h3>
             <p>
@@ -1097,11 +1060,11 @@
           </div>
           <div class="highlight-card">
             <div class="highlight-inner">
-              <span class="highlight-label">Fomento & Embrapii</span>
-              <h3>Estrutura pronta para avançar</h3>
+              <span class="highlight-label">Fomento & cooperação</span>
+              <h3>Projetos com apoio a pesquisa e inovação</h3>
               <p>
-                Estamos preparando nossa trajetória institucional para apresentar candidaturas a programas de apoio à P&D e inovação,
-                como Embrapii, Finep, CNPq e Fundações de Amparo à Pesquisa.
+                Desenvolvemos iniciativas em parceria com instituições públicas e privadas, utilizando, quando adequado, mecanismos
+                de apoio e financiamento compatíveis com o marco legal vigente e com os objetivos de cada projeto.
               </p>
             </div>
           </div>
@@ -1497,18 +1460,14 @@
         </div>
         <div>
           <div class="card">
-            <div class="card-tag">Fomento & Embrapii</div>
+            <div class="card-tag">Fomento & cooperação</div>
             <p>
-              O IFT estrutura sua atuação como ICT privada com foco em P&D e inovação, alinhando suas práticas aos requisitos de
-              programas nacionais de fomento. Nossos núcleos L.I.S.I. e Incubatech constituem a base técnico-científica e de inovação
-              para futuras candidaturas a chamadas de apoio à pesquisa e desenvolvimento, incluindo iniciativas como:
+              O IFT estrutura sua atuação como ICT privada com foco em P&D e inovação, desenvolvendo projetos em cooperação com
+              instituições públicas e privadas, universidades, centros de pesquisa e organizações da sociedade civil. Nossos núcleos
+              L.I.S.I. e Incubatech oferecem base técnico-científica e de inovação para a construção de iniciativas conjuntas, que
+              podem utilizar diferentes mecanismos de apoio e financiamento compatíveis com o marco legal vigente e com os objetivos
+              de cada parceria.
             </p>
-            <ul class="list mt-3">
-              <li>Embrapii – Unidades de Pesquisa e Inovação</li>
-              <li>Finep – financiamento à inovação</li>
-              <li>CNPq e Fundações de Amparo à Pesquisa (FAPs)</li>
-              <li>Programas estaduais e municipais de inovação e ciência aplicada</li>
-            </ul>
             <p class="mt-3">
               Estamos abertos a construir propostas em conjunto com parceiros desde o desenho inicial, garantindo aderência técnica,
               institucional e estratégica.
@@ -1598,25 +1557,6 @@
             </div>
           </form>
         </div>
-        <div class="contact-info">
-          <p>
-            <strong>IFT – Instituto de Formação em Tecnologia</strong><br />
-            Associação civil de direito privado, sem fins lucrativos, Instituição Científica, Tecnológica e de Inovação
-            (ICT privada), conforme a Lei nº 10.973/2004.
-          </p>
-          <p>
-            <strong>Endereço:</strong><br />
-            [Insira aqui o endereço completo do IFT]
-          </p>
-          <p>
-            <strong>E-mail institucional:</strong><br />
-            contato@ift-institute.org (exemplo – ajuste para o e-mail oficial)
-          </p>
-          <p>
-            <strong>Redes e ecossistema:</strong><br />
-            Parte do ecossistema Quartzgroup – ciência, educação, tecnologia e inovação integradas.
-          </p>
-        </div>
       </div>
     </div>
   </section>
@@ -1627,7 +1567,7 @@
       <div class="footer-top">
         <div class="footer-meta">
           <span><strong>IFT – Instituto de Formação em Tecnologia</strong></span>
-          <span>Associação civil de direito privado, sem fins lucrativos, Instituição Científica, Tecnológica e de Inovação (ICT privada), conforme a Lei nº 10.973/2004.</span>
+          <span>Associação civil de direito privado, sem fins lucrativos, Instituição Científica, Tecnológica e de Inovação (ICT privada).</span>
           <span>Pilar científico e educacional do ecossistema Quartzgroup, dedicado à educação técnica e científica, à pesquisa aplicada e à inovação com impacto social.</span>
         </div>
         <div class="footer-links">
@@ -1645,10 +1585,8 @@
   </footer>
 
   <script>
-    // Ano automático no rodapé
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Menu mobile
     const menuToggle = document.getElementById("menuToggle");
     const navMobile = document.getElementById("navMobile");
     menuToggle.addEventListener("click", () => {
@@ -1656,21 +1594,19 @@
       navMobile.style.display = isOpen ? "none" : "flex";
     });
 
-    // Fechar menu mobile ao clicar em link
     navMobile.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         navMobile.style.display = "none";
       });
     });
 
-    // Rolagem suave
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener("click", function (e) {
         const targetId = this.getAttribute("href").substring(1);
         const targetEl = document.getElementById(targetId);
         if (targetEl) {
           e.preventDefault();
-          const yOffset = -72; // compensar header fixo
+          const yOffset = -72;
           const y = targetEl.getBoundingClientRect().top + window.scrollY + yOffset;
           window.scrollTo({ top: y, behavior: "smooth" });
         }
