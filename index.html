@@ -110,7 +110,7 @@
       display: flex;
       align-items: center;
       gap: 2.5rem;
-      height: 90px;
+      min-height: 90px; /* permite crescer com a logo maior */
     }
 
     .logo {
@@ -122,7 +122,7 @@
     }
 
     .logo-img {
-      height: 56px;       /* altura controlada para integrar melhor à barra */
+      height: 168px;       /* logomarca triplicada (antes: 56px) */
       width: auto;
       display: block;
     }
@@ -265,7 +265,7 @@
         justify-content: flex-end;
       }
       .nav {
-        height: 96px;
+        min-height: 96px;
       }
     }
 
@@ -283,7 +283,7 @@
     }
 
     .hero-kicker {
-      font-size: 0.78rem;
+      font-size: clamp(2.3rem, 3vw, 3rem); /* mesmo tamanho do h1 */
       text-transform: uppercase;
       letter-spacing: 0.16em;
       color: var(--secondary);
@@ -746,7 +746,7 @@
             <strong>pilar científico e educacional do ecossistema Quartzgroup</strong>.
           </p>
           <div class="hero-actions">
-            <!-- Os três botões agora sólidos na cor da logomarca -->
+            <!-- Os três botões sólidos na cor da logomarca -->
             <a href="#lisi" class="btn btn-primary">Conheça o L.I.S.I.</a>
             <a href="#incubatech" class="btn btn-primary">Conheça a Incubatech</a>
             <a href="#parcerias-fomento" class="btn btn-primary">Quero propor um projeto</a>
