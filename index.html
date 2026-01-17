@@ -109,41 +109,37 @@
     .nav {
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      gap: 2.5rem;
       height: 90px;
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 0.6rem;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #ffffff;
+      justify-content: center;
+      padding: 0.25rem 0;
+      flex-shrink: 0;
     }
 
     .logo-img {
-      width: 84px; /* logomarca maior */
-      height: auto;
+      height: 56px;       /* altura controlada para integrar melhor à barra */
+      width: auto;
       display: block;
-    }
-
-    .logo-subtitle {
-      font-size: 0.75rem;
-      color: #bfdbfe;
-      margin-top: -2px;
     }
 
     .nav-links {
       display: none;
-      gap: 1.5rem;
+      gap: 1.8rem;
       font-size: 0.9rem;
+      flex: 1;
+      justify-content: center;
     }
 
     .nav-links a {
       color: #e5e7eb;
       font-weight: 500;
       position: relative;
+      white-space: nowrap;
     }
 
     .nav-links a::after {
@@ -163,6 +159,7 @@
 
     .nav-cta {
       display: none;
+      flex-shrink: 0;
     }
 
     .btn {
@@ -194,20 +191,11 @@
 
     .btn-outline {
       background: transparent;
-      color: var(--primary);
-      border: 1px solid rgba(148, 163, 184, 0.7);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.8);
     }
 
     .btn-outline:hover {
-      background: rgba(15, 23, 42, 0.03);
-    }
-
-    .nav-cta .btn-outline {
-      color: #ffffff;
-      border-color: rgba(255, 255, 255, 0.8);
-    }
-
-    .nav-cta .btn-outline:hover {
       background: rgba(15, 23, 42, 0.18);
     }
 
@@ -222,6 +210,7 @@
       border-radius: 999px;
       cursor: pointer;
       border: 1px solid rgba(255, 255, 255, 0.5);
+      margin-left: auto;
     }
 
     .menu-toggle span {
@@ -273,6 +262,7 @@
       }
       .nav-cta {
         display: flex;
+        justify-content: flex-end;
       }
       .nav {
         height: 96px;
@@ -708,14 +698,10 @@
   <header>
     <div class="container">
       <nav class="nav">
-        <div class="logo">
+        <a href="#inicio" class="logo">
           <!-- Ajuste o caminho do arquivo de logomarca conforme o seu repositório -->
           <img src="logo-ift-novo.png" alt="IFT – Instituto de Formação em Tecnologia" class="logo-img" />
-          <div>
-            <div>IFT – Instituto de Formação em Tecnologia</div>
-            <div class="logo-subtitle">Ciência, educação & tecnologia em rede</div>
-          </div>
-        </div>
+        </a>
         <div class="nav-links">
           <a href="#inicio">Início</a>
           <a href="#ift-ict">IFT como ICT</a>
